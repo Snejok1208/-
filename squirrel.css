@@ -1,0 +1,349 @@
+
+/* Header */
+
+.header_primary {
+    background: #213B7E;
+    width: 100%;
+    max-width: 1700px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site_menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site_menu > li {
+    display: flex;
+}
+
+.menu_link {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background-color: #213B7E;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration-line: underline;
+    font-family: 'Roboto';
+    cursor: pointer;
+    min-height: 80px;
+} 
+
+.menu_link:hover {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration-line: none;
+}
+
+.login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #EA5D21;
+    width: 153px;
+    min-height: 50px;
+    font-family: 'Roboto';
+    cursor: pointer;
+    border: none;
+}
+
+.login_button:hover {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration-line: none;
+}
+
+/* Popup */
+
+.login_popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-68%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 20px 28px 50px;
+    background: #FFFFFF;
+    border: 1px solid #213B7E;;
+    background-color: #FFFFFF;
+}
+
+.login_heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 33px 0px;
+}
+
+.login_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_form > input {
+    width: 100%;
+    max-width: 500px;
+    min-height: 55px;
+    margin-bottom: 56px;
+    border: 1px solid #808080;
+}
+
+.login_input {
+    width: 444px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 8px;
+}
+
+.login_password {
+    width: 444px;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding: 8px;
+}
+
+.popup_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    text-decoration: none;
+    background: #EA6113;
+    color: #FFFFFF;
+    border: none;
+}
+
+.active_link {
+    color: #213B7E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.show-popup {
+    display: block;
+}
+
+.popup_close {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    border: 4px double #EA6113;
+    cursor: pointer;
+}
+
+.popup_close:hover {
+    border-radius: 50%;
+}
+
+.page {
+    background: #010001;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.content {
+    padding-top: 120px;
+    
+}
+
+.Belka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Belka_vid {
+    margin: 26px 0 0 0;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.Belka_paragraph {
+    margin: 0;
+    max-width: 250px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.line {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 30px auto 80px auto;
+}
+
+.line {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 30px auto 80px auto;
+}
+.line:before,
+.line-8:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-left: 26px solid #337AB7;
+    border-bottom: 26px solid #337AB7;
+    animation: arrow-8 3s linear infinite -1.5s;opacity: 1;  
+    opacity: 1;  
+    transform: translate(0, 0) rotate(-45deg);
+}
+
+.Foto_Belki {
+    max-width: 1700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Belka_section {
+    display: flex;
+    padding: 0 20px;
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.Belka_text {
+    display: flex;
+    width: 50%;
+}
+
+.Belka_digits {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Belka_vid {
+    margin: 45px;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.Belka_list {
+    margin: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+}
+
+.Bel_list {
+    padding: 0;
+    list-style: none;
+}
+
+.Belka_heading-item,
+.Belka_digit-item  {
+    margin-bottom: 11px;
+}
+
+.Foto {
+    padding-left: 100px;
+    margin: 45px;
+    width: 100%;
+    max-width: 519px
+    
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1700px;
+    min-height: 60px;
+    margin: 0 auto;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #213B7E;
+    
+}
+
+.copyright {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.innop_link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .header_primary {
+        box-sizing: border-box;
+    }
+    .Foto {
+        object-fit: cover;
+    width: 320px;
+    height: 180px;
+    }
+    .Bel_list {
+        object-fit: cover;
+    width: 320px;
+    height: 180px;
+    }
+    .footer {
+        padding-bottom: 30px;
+    }
+}
